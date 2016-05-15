@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐藏html的元素</title>
+    <script type="text/javascript" src="../public/js/jquery.js">
+
+    </script>
+</head>
+<body>
+<div>
+    <p id="p1">第一段</p>
+    <p id="p2">第二段</p>
+    <p id="p3">第三段</p>
+    <p id="p4">第四段</p>
+</div>
+
+<button type="button" name="button" class="b1">隐藏</button>
+<button type="button" name="button" class="b2">隐藏第四段</button>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".b1").click(function(){
+            $(this).hide();
+        });
+        $(".b2").click(function () {
+            $("#p4").hide();
+        });
+    });
+</script>
+</html>
